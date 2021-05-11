@@ -11,42 +11,47 @@
     <header>
       <img src="https://bit.ly/2EuFNQZ" />
       <p>World Rainforest Conservation</p>
-      <video id="video" loop muted autoplay><source src="https://bit.ly/34qGnKk" /></video>
     </header>
-    <div id="video-background"></div>
+    <div id="video-background">
+      <video id="video" loop muted autoplay>
+        <source src="https://bit.ly/34qGnKk" />
+      </video>
+    </div>
     <div id="overlay-text">
       <h1>Save The Rainforest</h1>
       <h2>Save The Environment, Save The World.</h2>
-      <h3 id="sub-header">A little background first</h3>
-      <h3 id="form-title">Help us protect them</h3>
     </div>
-    <div id="petition">
-      <div id="petition-paragraph">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-          mollis pretium. Integer tincidunt. Cras dapibu
-        </p>
-      </div>
-      <div id="petition-form">
-        <form id="myForm">
-          <input type="text" name="" id="first-name" />
-          <input type="text" name="" id="last-name" />
-          <input type="text" name="" id="city" />
-          <input type="number" name="" id="zip-code" />
-          <input type="checkbox" unchecked name="" id="check" />
-          <div id="warning"></div>
-          <button onclick="submit()" type="submit" id="submit-form-button"></button>
-        </form>
+    <div id="container">
+      <div id="petition">
+        <div id="petition-paragraph">
+          <h3 id="sub-header">A little background first</h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+            mollis pretium. Integer tincidunt. Cras dapibu
+          </p>
+        </div>
+        <div id="petition-form">
+          <h3 id="form-title">Help us protect them</h3>
+          <form id="myForm">
+            <input type="text" name="" id="first-name" placeholder="First Name" />
+            <input type="text" name="" id="last-name" placeholder="Last Name" />
+            <input type="text" name="" id="city" placeholder="City" />
+            <input type="number" name="" id="zip-code" placeholder="Zip Code" />
+            <input type="checkbox" name="" id="check" />
+            <div id="warning"></div>
+            <button onclick="submit()" type="submit" id="submit-form-button">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
     <footer id="copyright-text">Copyright WRC 2020</footer>

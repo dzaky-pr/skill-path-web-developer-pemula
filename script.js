@@ -61,6 +61,6 @@ function submit() {
   if (validateFormData(getFormData()) == false) {
     warning.innerHTML = 'Periksa form anda sekali lagi';
   } else {
-    document.getElementById('warning').innerHTML = '';
+    warning.innerHTML = '';
   }
 }
