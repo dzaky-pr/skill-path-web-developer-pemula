@@ -1,10 +1,66 @@
+// Tambahkan kode JavaScript kalian di file ini
+//16
 function getFormData() {
-  const obj = {
-     firstName: document.getElementById("first-name").value,
-     lastName: document.getElementById("last-name").value,
-     city: document.getElementById("city").value,
-     zipCode: document.getElementById("zip-code").value,
-     check: document.getElementById("check").value
+  let object = {
+    firstName: document.getElementById('first-name').value,
+    lastName: document.getElementById('last-name').value,
+    city: document.getElementById('city').value,
+    zipCode: document.getElementById('zip-code').value,
+    check: document.getElementById('check').checked,
+  };
+  return object;
+}
+
+//17
+function isNumber(string) {
+  if (isNaN(string) == false) {
+    return true;
+  } else {
+    return false;
   }
-  return obj;
+}
+
+//18
+function isLength(string, integer) {
+  if (string.length == integer) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//19
+function checkboxIsChecked() {
+  if (check.checked) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//20
+function validateFormData(object) {
+  let zipCode = isNumber(object['zipCode']);
+  let checked = checkboxIsChecked();
+  const array = ['firstName', 'lastName', 'city', 'zipCode'];
+
+  if (isLength(array, 4) == true && zipCode == true && checked == true) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//21
+function resetForm() {
+  document.getElementById('myForm').reset();
+}
+
+//22
+function submit() {
+  if (validateFormData(getFormData()) == false) {
+    warning.innerHTML = 'Periksa form anda sekali lagi';
+  } else {
+    document.getElementById('warning').innerHTML = '';
+  }
 }

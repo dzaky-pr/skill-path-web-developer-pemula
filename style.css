@@ -6,8 +6,6 @@ body {
 
 video {
   position: absolute;
-  /* height: 100px;
-  width: 100px; */
 }
 
 footer {
@@ -21,4 +19,8 @@ footer {
 
 #submit-form-button {
   background-color: greenyellow;
+}
+
+#warning {
+  color: #ff0000;
 }
