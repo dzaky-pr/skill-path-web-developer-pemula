@@ -64,3 +64,8 @@ function submit() {
     warning.innerHTML = '';
   }
 }
+
+// alert function
+function underMaintenance() {
+  alert('Sorry, this website was under maintenance :)');
+}
