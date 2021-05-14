@@ -69,3 +69,16 @@ function submit() {
 function underMaintenance() {
   alert('Sorry, this website was under maintenance :)');
 }
+
+// greeting message
+function greeting() {
+  let obj = {
+    firstName: document.getElementById('first-name').value,
+    lastName: document.getElementById('last-name').value,
+  };
+  // if () {
+  alert(`thank you ${obj.firstName} ${obj.lastName}`);
+  // } else {
+  //   warning.innerHTML = 'Check your form again';
+  // }
+}
