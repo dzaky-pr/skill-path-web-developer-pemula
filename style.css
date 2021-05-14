@@ -44,7 +44,8 @@ header p {
   height: 100%;
 }
 
-#submit-form-button {
+#submit-form-button,
+#reset-form-button {
   background-color: greenyellow;
 }
 
@@ -76,6 +77,49 @@ header p {
   text-align: center;
 }
 
+#first-name,
+#last-name,
+#city,
+#zip-code,
+#submit-form-button,
+#reset-form-button {
+  width: 300px;
+  height: 30px;
+}
+
+.agree-con {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.button-con {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  #first-name,
+  #last-name,
+  #city,
+  #zip-code,
+  #submit-form-button,
+  #reset-form-button {
+    width: 200px;
+    height: 20px;
+  }
+
+  .agree-con {
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
 @media only screen and (max-width: 610px) {
   header p {
     font-size: 12px;
@@ -94,6 +138,32 @@ header p {
   }
 
   #container {
+    font-size: 12px;
+  }
+
+  #first-name,
+  #last-name,
+  #city,
+  #zip-code {
+    width: 150px;
+    height: 15px;
+    font-size: 12px;
+  }
+
+  #submit-form-button,
+  #reset-form-button {
+    width: 150px;
+    height: 20px;
+  }
+
+  .agree-con {
+    display: flex;
+    flex-direction: row;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .button-con button {
     font-size: 12px;
   }
 }
@@ -116,6 +186,32 @@ header p {
   }
 
   #container {
+    font-size: 10px;
+  }
+
+  #first-name,
+  #last-name,
+  #city,
+  #zip-code {
+    width: 100px;
+    height: 10px;
+    font-size: 10px;
+  }
+
+  #submit-form-button,
+  #reset-form-button {
+    width: 100px;
+    height: 20px;
+  }
+
+  .agree-con {
+    display: flex;
+    flex-direction: row;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .button-con button {
     font-size: 10px;
   }
 }

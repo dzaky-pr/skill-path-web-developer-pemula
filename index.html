@@ -47,9 +47,12 @@
             <input type="text" name="" id="last-name" placeholder="Last Name" />
             <input type="text" name="" id="city" placeholder="City" />
             <input type="number" name="" id="zip-code" placeholder="Zip Code" />
-            <input type="checkbox" name="" id="check" />
+            <div class="agree-con"><input onclick="checkboxIsChecked()" type="checkbox" name="" id="check" /> I agree with the terms and conditions</div>
             <div id="warning"></div>
-            <button onclick="submit()" type="submit" id="submit-form-button">Submit</button>
+            <div class="button-con">
+              <button onclick="submit()" type="submit" id="submit-form-button">Submit</button>
+              <button onclick="resetForm()" type="submit" id="reset-form-button">Reset</button>
+            </div>
           </form>
         </div>
       </div>
