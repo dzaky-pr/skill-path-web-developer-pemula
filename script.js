@@ -67,7 +67,7 @@ function submit() {
 
 // alert function
 function underMaintenance() {
-  alert('Sorry, this website was under maintenance :)');
+  alert('Sorry, this website is under maintenance :)');
 }
 
 // greeting message
