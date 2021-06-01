@@ -75,7 +75,9 @@ function greeting() {
     firstName: document.getElementById('first-name').value,
     lastName: document.getElementById('last-name').value,
  };
+  if (validateFormData(object) == true) {
   return alert(`thank you ${obj.firstName} ${obj.lastName}`);
+  };
 };
 //   if (firstname, last-name === true) {
 //  alert(`thank you ${obj.firstName} ${obj.lastName}`);
