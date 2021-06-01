@@ -43,11 +43,11 @@
         <div id="petition-form">
           <h3 id="form-title">Help us protect them</h3>
           <form id="myForm">
-            <input type="text" name="" id="first-name" placeholder="First Name" />
-            <input type="text" name="" id="last-name" placeholder="Last Name" />
-            <input type="text" name="" id="city" placeholder="City" />
-            <input type="number" name="" id="zip-code" placeholder="Zip Code" />
-            <div class="agree-con"><input onclick="checkboxIsChecked()" type="checkbox" name="" id="check" /> I agree with the terms and conditions</div>
+            <input type="text" name="" id="first-name" placeholder="First Name" required/>
+            <input type="text" name="" id="last-name" placeholder="Last Name" required/>
+            <input type="text" name="" id="city" placeholder="City" required/>
+            <input type="number" name="" id="zip-code" placeholder="Zip Code" required/>
+            <div class="agree-con"><input onclick="checkboxIsChecked()" type="checkbox" name="" id="check" required/> I agree with the terms and conditions</div>
             <div id="warning"></div>
             <div class="button-con">
               <button onclick="greeting()" type="submit" id="submit-form-button">Submit</button>
